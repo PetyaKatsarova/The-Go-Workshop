@@ -36,8 +36,8 @@ type transaction struct {
 }
 
 func main() {
-	bankFile := flag.String("c", "", "location of the bank transaction csv file")
-	logFile := flag.String("l", "", "logging of errors")
+	bankFile := flag.String("c", "bank.csv", "location of the bank transaction csv file")
+	logFile := flag.String("l", "log.log", "logging of errors")
 	flag.Parse()
 
 	if *bankFile == "" {
